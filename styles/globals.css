@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -12,6 +16,7 @@ a {
 }
 
 * {
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
 
@@ -22,5 +27,22 @@ a {
   body {
     color: white;
     background: black;
+  }
+}
+
+#products {
+  background: linear-gradient(90deg, #6fc1f7, #ce5be7, #b07aec, #6fc1f7);
+  background-size: 800%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: animate 10s ease infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
   }
 }
